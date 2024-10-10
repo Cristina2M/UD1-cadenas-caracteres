@@ -1,19 +1,19 @@
 Algoritmo ejercicio3Corregido
 	// Leer la cadena
 	Escribir 'Ingrese una frase/oración: '
-	Leer c
+	Leer f
 	// Leer el carácter y validar que sea solo una letra
 	Repetir
-		Escribir 'Escribe una palabra: '
-		Leer car
-	Hasta Que Longitud(car)=1
+		Escribir 'Escribe una letra: '
+		Leer l
+	Hasta Que Longitud(l)=1
 	// Inicializar el contador
 	contador <- 0
 	// Recorrer la cadena y contar las veces que se repite el carácter
-	Para i<-0 Hasta Longitud(c) Hacer
-		Si SubCadena(c,i,i)=car Entonces
+	Para i<-0 Hasta Longitud(f)-1 Hacer
+		Si SubCadena(f,i,i)=l Entonces
 			contador <- contador+1
 		FinSi
 	FinPara
-	Escribir 'La palabra ', car, ' aparece ', contador, ' veces en la frase/oración.'
+	Escribir 'La letra ', l, ' aparece ', contador, ' veces en la frase/oración.'
 FinAlgoritmo
