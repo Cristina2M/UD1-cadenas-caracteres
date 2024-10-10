@@ -4,7 +4,7 @@ Algoritmo ejercicio2
 	Leer c
 	Escribir 'Ingrese la subcadena: '
 	Leer subc
-	Para i<-1 Hasta Longitud(c) Hacer
+	Para i<-0 Hasta Longitud(c) Hacer
 		Si Subcadena(c,i,i)<>' ' Entonces
 			c2 <- Concatenar(c2,Subcadena(c,i,i))
 		SiNo

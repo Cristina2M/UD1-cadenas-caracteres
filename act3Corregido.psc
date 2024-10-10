@@ -10,7 +10,7 @@ Algoritmo ejercicio3Corregido
 	// Inicializar el contador
 	contador <- 0
 	// Recorrer la cadena y contar las veces que se repite el carácter
-	Para i<-1 Hasta Longitud(c) Hacer
+	Para i<-0 Hasta Longitud(c) Hacer
 		Si SubCadena(c,i,i)=car Entonces
 			contador <- contador+1
 		FinSi
