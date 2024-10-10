@@ -9,7 +9,7 @@ Algoritmo ejercicio7
 		Escribir 'Ingrese el carácter de reemplazo: '
 		Leer cNuevo
 	Hasta Que Longitud(cNuevo)=1
-	Para i<-0 Hasta Longitud(c) Hacer
+	Para i<-0 Hasta Longitud(c)-1 Hacer
 		Si Subcadena(c,i,i)<>cSust Entonces
 			cadena2 <- Concatenar(cadena2,Subcadena(c,i,i))
 		SiNo
