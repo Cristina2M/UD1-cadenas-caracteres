@@ -4,8 +4,16 @@ Algoritmo ejercicio2
 	Leer c
 	Escribir 'Ingrese la subcadena: '
 	Leer subc
-	esp <- ' '
-	cadena2 <- Concatenar(c,esp)
-	cadena3 <- Concatenar(cadena2,subc)
-	Escribir 'Si los juntamos sería: ', cadena3
+	Para i<-1 Hasta Longitud(c) Hacer
+		Si Subcadena(c,i,i)<>' ' Entonces
+			c2 <- Concatenar(c2,Subcadena(c,i,i))
+		SiNo
+			i <- Longitud(c)
+		FinSi
+	FinPara
+	Si c2=subc Entonces
+		Escribir 'Empiezan por la misma palabra'
+	SiNo
+		Escribir 'No empiezan por la misma palabra'
+	FinSi
 FinAlgoritmo
