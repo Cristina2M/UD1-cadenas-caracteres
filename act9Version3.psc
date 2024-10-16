@@ -9,7 +9,8 @@ Algoritmo ejercicio9V3
 
 	
 	Mientras i<=(Longitud(c)-Longitud(subc)) Y encontrada=Falso Hacer
-		Si Subcadena(c,i,Longitud(subc))=subc Entonces
+
+		Si Subcadena(c,i,Longitud(subc)-1+i)=subc Entonces
 			encontrada=Verdadero
 		SiNo
 			i<-i+1
