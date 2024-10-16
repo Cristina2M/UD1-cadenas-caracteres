@@ -6,8 +6,7 @@ Algoritmo ejercicio9V3
 	
 	i<-0
 	encontrada<-Falso
-	tamaño1<-Longitud(c)
-	tamaño2<-Longitud(subc)
+
 	
 	Mientras i<=(Longitud(c)-Longitud(subc)) Y encontrada=Falso Hacer
 		Si Subcadena(c,i,Longitud(subc))=subc Entonces
