@@ -7,7 +7,7 @@ Algoritmo ejercicio9V3
 	i<-0
 	encontrada<-Falso
 
-	
+	//otra forma de poner encontrada=falso es poner No encontrada
 	Mientras i<=(Longitud(c)-Longitud(subc)) Y encontrada=Falso Hacer
 
 		Si Subcadena(c,i,Longitud(subc)-1+i)=subc Entonces
@@ -17,7 +17,8 @@ Algoritmo ejercicio9V3
 		Fin Si
 	Fin Mientras
 	
-	Si encontrada=Verdadero Entonces
+	//no es necesario poner =verdadero
+	Si encontrada Entonces
 		Escribir 'Si se encuentra dentro de la cadena principal'
 	SiNo
 		Escribir "No se encuentra dentro de la cadena principal"
